@@ -1,33 +1,27 @@
+import Box from '../components/box';
 import type { NextPage } from 'next';
 import { useState } from 'react';
 import s from '../styles/Present.module.scss';
+import Snow from '../components/snow';
+import Name from '../components/name';
+
 
 const Present: NextPage = () => {
   const [open, setOpen] = useState(false);
 
   const openBox = () => {
     setOpen(true);
-  }
-
+  };
+  
   return (
     <main className="main">
-      <h3>Hover the box</h3>
-      <div className={s['present-wrapper']}>
-        <div className={s.box}>
-          <div className={open ? [s.open, s['box-wrapper']].join(' ') : s['box-wrapper']} onClick={openBox}>
-            <div className={s.glow} />
-            <img
-              className={[s.img, s.star].join(' ')}
-              src="https://via.placeholder.com/150"
-            />
-            <div className={s['box-body']}>
-              <div className={s['box-lid']}>
-                <div className={s['box-bow']}></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <h1 className={s['open-box']}>Öppna paketet!</h1>
+      <Box
+        onClick={openBox}
+        open={open}
+      />
+      {open && <Name />}
+      <Snow />
     </main>
   );
 };

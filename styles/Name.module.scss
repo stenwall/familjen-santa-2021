@@ -1,0 +1,24 @@
+.name {
+  font-family: 'Staatliches', cursive;
+  animation-name: glaucoma;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+@keyframes glaucoma {
+  from {
+    opacity: 1;
+    text-shadow: 0 0 75px white;
+    color: transparent;
+  }
+
+  to {
+    opacity: 1;
+    text-shadow: 0;
+    color: transparent;
+  }
+}
