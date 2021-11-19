@@ -12,7 +12,8 @@
     content: '';
     width: 440px;
     height: 440px;
-    background-color: #3E594A;
+    background-color: #3f2c41;
+    // background-color: rgb(45, 32, 46);
     // background-color: rgb(36, 48, 41);
     position: absolute;
     top: 50%;
@@ -20,8 +21,8 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    -webkit-box-shadow: inset 10px 0 10px 0 rgb(47 66 55 / 90%), inset 45px 0 15px -12px rgb(47 66 55 / 30%), inset 65px 0 10px -15px rgb(47 66 55 / 50%);
-    box-shadow: inset 10px 0 10px 0 rgb(47 66 55 / 90%), inset 45px 0 15px -12px rgb(47 66 55 / 30%), inset 65px 0 10px -15px rgb(47 66 55 / 50%);
+    -webkit-box-shadow: inset 10px 0 10px 0 rgb(45 32 46 / 90%), inset 45px 0 15px -12px rgb(45 32 46 / 30%), inset 46px 0 10px -15px rgb(45 32 46 / 50%);
+    box-shadow: inset 10px 0 10px 0 rgb(45 32 46 / 90%), inset 45px 0 15px -12px rgb(45 32 46 / 30%), inset 46px 0 10px -15px rgb(45 32 46 / 50%);
   }
 }
 
@@ -42,13 +43,13 @@
 
   .glow {
     display: block;
-    height: 150px;
-    width: 150px;
+    height: 145px;
+    width: 145px;
     position: absolute;
     margin: 0 auto;
     left: 50%;
     transform: translateX(-50%);
-    top: -150px;
+    top: -152px;
     background: transparent;
   }
 
@@ -192,39 +193,39 @@
 @keyframes star {
   0% {
     border-radius: none;
-    box-shadow: 0px 0px 40px rgba(255, 255, 0, 0.6);
+    box-shadow: 0px 0px 40px rgba(105, 178, 196, 0.6);
   }
   10% {
     box-shadow: 0px 0px 0px transparent;
   }
   20% {
-    box-shadow: 0px 0px 120px rgba(255, 255, 0, 0.6);
+    box-shadow: 0px 0px 120px rgba(105, 178, 196, 0.6);
   }
   30% {
     box-shadow: 0px 0px 0px transparent;
   }
   40% {
-    box-shadow: 0px 0px 120px rgba(255, 255, 0, 0.6);
+    box-shadow: 0px 0px 120px rgba(105, 178, 196, 0.6);
   }
   50% {
     box-shadow: 0px 0px 0px transparent;
   }
   60% {
-    box-shadow: 0px 0px 20vh rgba(255, 255, 0, 1);
+    box-shadow: 0px 0px 20vh rgba(105, 178, 196, 1);
   }
 
   70% {
     box-shadow: 0px 0px 0px transparent;
   }
   80% {
-    box-shadow: 0px 0px 20vh rgba(255, 255, 0, 1);
+    box-shadow: 0px 0px 20vh rgba(105, 178, 196, 1);
   }
 
   90% {
     box-shadow: 0px 0px 0px transparent;
   }
   100% {
-    box-shadow: 0px 0px 40px rgba(255, 255, 0, 0.6);
+    box-shadow: 0px 0px 40px rgba(105, 178, 196, 0.6);
   }
 }
 

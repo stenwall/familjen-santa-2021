@@ -8,12 +8,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "mongodb": "^4.2.0",
+    "mongoose": "^6.0.13",
     "next": "12.0.4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "sass": "^1.43.4"
+    "sass": "^1.43.4",
+    "swr": "^1.0.1"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/mongodb": "^4.0.7",
+    "@types/mongoose": "^5.11.97",
     "@types/node": "16.11.7",
     "@types/react": "17.0.35",
     "eslint": "7.32.0",
