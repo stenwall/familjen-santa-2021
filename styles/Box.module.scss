@@ -39,6 +39,8 @@
     left: 0;
     right: 0;
     z-index: 10;
+    width: 150px;
+    height: 150px;
   }
 
   .glow {
@@ -142,13 +144,13 @@
   z-index: 20;
 
   .img {
-    -webkit-animation: slide-up 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s
+    -webkit-animation: slide-up 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s
       both;
-    animation: slide-up 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+    animation: slide-up 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s both;
   }
 
   .glow {
-    animation: star 5s ease-out 1.4s infinite;
+    animation: star 5s ease-out 4.2s infinite;
   }
 
   .box-lid {

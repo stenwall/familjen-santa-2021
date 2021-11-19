@@ -11,23 +11,12 @@ import { FETCH} from 'services/santa.service';
 
 const fetcher = (url: string) => FETCH(url).then((res) => res);
 
-// const fetcher = async (url: string) => {
-//   const res = await fetch(url)
-//   const data = await res.json()
-
-//   if (res.status !== 200) {
-//     throw new Error(data.message)
-//   }
-//   return data
-// }
-
 const Present: NextPage = () => {
   const [open, setOpen] = useState(false);
   const router = useRouter();
   const { code } = router.query;
   const { data } = useSWR<IPerson>(() => `api/gift/${code}`, fetcher)
 
-  // if (error) return <div>Error</div>
   if (!data) return <div>Loading...</div>
   console.log(data)
 
@@ -37,14 +26,26 @@ const Present: NextPage = () => {
   
   return (
     <main className="main">
-      <h1 className={s['open-box']}>
-        {data.giver}
+      {!open && (
+        <h1 className={s['not-open']}>
+        {data.giver}, öppna paketet!
       </h1>
+      )}
+      {open && (
+        <h1 className={s.open}>
+        Du ska ge till<span>.</span><span>.</span><span>.</span>
+      </h1>
+      )}
       <Box
         onClick={openBox}
         open={open}
+        imgUrl={data.receiver_img}
       />
-      {open && <Name />}
+      {open && (
+        <Name
+          name={data.receiver}
+        />
+      )}
       <Snow />
     </main>
   );

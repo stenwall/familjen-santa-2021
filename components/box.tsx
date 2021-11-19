@@ -3,7 +3,8 @@ import s from '../styles/Box.module.scss';
 
 interface Props {
   onClick: MouseEventHandler,
-  open: Boolean
+  open: Boolean,
+  imgUrl: string
 }
 
 const Box = (props: Props) => {
@@ -20,7 +21,7 @@ const Box = (props: Props) => {
           <div className={s.glow} />
           <img
             className={[s.img, s.star].join(' ')}
-            src="https://via.placeholder.com/150"
+            src={props.imgUrl}
           />
           <div className={s['box-body']}>
             <div className={s['box-lid']}>
