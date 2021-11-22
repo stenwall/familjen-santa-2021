@@ -1,0 +1,57 @@
+.content {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  perspective: 600px;
+  z-index: 200;
+}
+
+.letter {
+  position: absolute;
+  z-index: 15;
+  transform: translateZ(-1600px) translateY(-160px) translateX(-190px);
+}
+
+.envelope {
+  position: relative;
+  width: 150px;
+  height: 90px;
+  background: linear-gradient(#cccbd7 0.5px, #7873a7 0.5px);
+  cursor: pointer;
+}
+
+.envelope::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  border-top: 57px solid #7873a7;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  box-sizing: border-box;
+  z-index: 30;
+  transform-origin: top;
+}
+
+.envelope::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 90px;
+  z-index: 25;
+  background: 
+    //bottom-right
+    linear-gradient(30deg, #555184 47%, #4f4c6b 50%, #5e5690 50%) 75px 45px/ 75px
+      45px no-repeat,
+    //top-left
+    linear-gradient(31deg, #5e5690 49%, #4f4c6b 50%, transparent 50%) 0px 0px/ 76px
+      45px no-repeat,
+    //bottom-left
+    linear-gradient(150deg, #5e5690 50%, #4f4c6b 50%, #555184 53%) 0px 45px/ 75px
+      45px no-repeat,
+    //top-right
+    linear-gradient(148.7deg, transparent 50%, #4f4c6b 50%, #5e5690 51%) 75px
+      0px/ 75px 45px no-repeat;
+}

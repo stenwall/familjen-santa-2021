@@ -8,6 +8,8 @@ import { useRouter } from 'next/router'
 import useSWR from 'swr'
 import { IPerson } from 'models/Person';
 import { FETCH} from 'services/santa.service';
+// import Rules from 'components/rules';
+import Envelope from 'components/envelope';
 
 const fetcher = (url: string) => FETCH(url).then((res) => res);
 
@@ -46,7 +48,10 @@ const Present: NextPage = () => {
           name={data.receiver}
         />
       )}
+      
+      {/* <Rules /> */}
       <Snow />
+      <Envelope />
     </main>
   );
 };
