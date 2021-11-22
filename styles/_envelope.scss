@@ -11,12 +11,13 @@
   left: 0;
   top: -7rem;
   font-size: 2rem;
-  transform: rotate(90deg) translateY(2.5rem);
+  transform: rotate(90deg) translateY(3.1rem);
   color: #d2e9ee;
   font-family: 'Staatliches', cursive;
   // animation-name: bounceInLeft
   span {
     vertical-align: baseline;
+    margin-left: 0.5rem;
   }
 }
 

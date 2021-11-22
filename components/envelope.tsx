@@ -15,46 +15,6 @@ const Envelope = (props: Props) => {
   let letter = CSSRulePlugin.getRule('.letter');
   let ruleText = CSSRulePlugin.getRule('.rules-title');
 
-  // t2.from(ruleText, {
-  //   cssRule: {
-  //     yPercent: -2000,
-  //   }
-  // })
-  // .to(ruleText, {
-  //   duration: 0.5,
-  //   ease: 'sine.in',
-  //   cssRule: {
-  //     yPercent: -300,
-  //   }
-  // })
-  // .to(ruleText, {
-  //   duration: 0.5,
-  //   ease: 'sine.in',
-  //   cssRule: {
-  //     translateY: 27,
-  //   }
-  // })
-  // .to(ruleText, {
-  //   duration: 0.5,
-  //   ease: 'sine.in',
-  //   cssRule: {
-  //     translateY: -12,
-  //   }
-  // })
-  // .to(ruleText, {
-  //   duration: 0.5,
-  //   ease: 'sine.in',
-  //   cssRule: {
-  //     translateY: 7,
-  //   }
-  // })
-  // .to(ruleText, {
-  //   ease: 'bounce.out',
-  //   cssRule: {
-  //     yPercent: 0,
-  //   }
-  // });
-
   t2.from(ruleText, {
     cssRule: {
       yPercent: -2000,
@@ -80,28 +40,6 @@ const Envelope = (props: Props) => {
       yPercent: 0,
     }
   });
-
-  // t2.fromTo(ruleText, {
-  //   duration: 10,
-  //   ease: 'sine.in',
-  //   cssRule: {
-  //     yPercent: -2000,
-  //   },
-  //   motionPath: {
-  //     path: [
-  //       { x: 0, y: 0.9 },
-  //       { x: 0, y: 0.03 },
-  //       { x: 0, y: 0.69 },
-  //       { x: 0, y: 0.22 }
-  //     ],
-  //     type: 'cubic'
-  //   }
-  // }, {
-  //   ease: 'bounce.out',
-  //   cssRule: {
-  //     yPercent: 0,
-  //   }
-  // });
 
   t1.to(flap, {
     duration: 0.5,
@@ -144,40 +82,6 @@ const Envelope = (props: Props) => {
         rotation: -15
       }
     });
-
-  // t2.to(letter, {
-  //   duration: 0.9,
-  //   ease: 'back.inOut(1.4)',
-  //   transformOrigin: 'right 50%',
-  //   cssRule: {
-  //     xPercent: 0,
-  //     yPercent: 0,
-  //     translateZ: -1600,
-  //     rotation: 0
-  //   }
-  // })
-  //   .set(letter, {
-  //     zIndex: 15
-  //   })
-  //   .to(letter, {
-  //     cssRule: {
-  //       // zIndex: 15,
-  //       translateY: -200
-  //     },
-  //     duration: 0.9,
-  //     ease: 'back.inOut(1.5)'
-  //   })
-  //   .set(flap, {
-  //     cssRule: {
-  //       zIndex: 30
-  //     }
-  //   })
-  //   .to(flap, {
-  //     duration: 0.5,
-  //     cssRule: {
-  //       rotateX: -180
-  //     }
-  //   });
 
   const openCard = () => {
     t1.play();

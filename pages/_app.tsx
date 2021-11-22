@@ -3,10 +3,9 @@ import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import { gsap } from "gsap";
 import { CSSRulePlugin } from "gsap/dist/CSSRulePlugin";
-// import { CSSPlugin } from "gsap/src/CSSPlugin";
 
 gsap.registerPlugin(CSSRulePlugin);
-// gsap.registerPlugin(CSSPlugin);
+
 gsap.config({
   nullTargetWarn: false,
 });
