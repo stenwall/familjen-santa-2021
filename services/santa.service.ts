@@ -1,4 +1,4 @@
-const apiBaseURL = 'http://localhost:3000';
+const apiBaseURL = 'https://familjen-santa-2021.vercel.app';
 
 export const FETCH = (query: string) => {
   return fetch(`${apiBaseURL}/${query}`)
