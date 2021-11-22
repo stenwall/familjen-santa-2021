@@ -6,6 +6,20 @@
   z-index: 200;
 }
 
+.rules-title {
+  position: absolute;
+  left: 0;
+  top: -7rem;
+  font-size: 2rem;
+  transform: rotate(90deg) translateY(2.5rem);
+  color: #d2e9ee;
+  font-family: 'Staatliches', cursive;
+  // animation-name: bounceInLeft
+  span {
+    vertical-align: baseline;
+  }
+}
+
 .letter {
   position: absolute;
   z-index: 15;
@@ -54,4 +68,11 @@
     //top-right
     linear-gradient(148.7deg, transparent 50%, #4f4c6b 50%, #5e5690 51%) 75px
       0px/ 75px 45px no-repeat;
+}
+
+@keyframes bounceInLeft {
+  0% { transform: translate3d(-300%, 0, 0) }
+  58% { transform: translate3d(27px, 0, 0) }
+  73% { transform: translate3d(-12px, 0, 0) }
+  88% { transform: translate3d(8px, 0, 0) }
 }
